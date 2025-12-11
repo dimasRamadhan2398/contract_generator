@@ -312,7 +312,7 @@ def create_docx(text):
 # ======================
 # MAIN PAGE
 # ======================
-st.title("Generator Template Kontrak Kerja — UMKM (Tab-based)")
+st.title("Generator Template Kontrak Kerja — UMKM")
 st.caption("Pilih jenis kontrak lewat tab di bawah, isi data, lalu generate & download.")
 
 
@@ -570,4 +570,5 @@ with tab_freelance:
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             key="dl_fl_docx",
         )
+
 
