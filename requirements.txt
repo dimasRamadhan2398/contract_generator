@@ -1,4 +1,2 @@
 streamlit
-datetime
-BytesIO
-Document
+python-docx
