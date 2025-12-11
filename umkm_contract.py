@@ -76,12 +76,7 @@ Kedua pihak tidak bertanggung jawab atas keterlambatan atau kegagalan pelaksanaa
 Pasal 11 — Kerjasama & Perubahan Kontrak
 Perubahan terhadap perjanjian ini harus dibuat tertulis dan ditandatangani kedua pihak.
 
-Tanda tangan
-Pihak I: ______________________
-
-Pihak II: ______________________
-
-Saksi: ______________________
+Demikian perjanjian ini dibuat dalam rangkap 2 (dua) masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama.
 """
 
 TEMPLATE_PKWT = """PERJANJIAN KERJA WAKTU TERTENTU (PKWT)
@@ -128,12 +123,7 @@ Pihak II wajib menjaga kerahasiaan informasi usaha yang bersifat strategis dan t
 Pasal 8 — Lain-lain
 Hal-hal yang belum diatur akan diselesaikan secara musyawarah dan mengacu pada peraturan perundang-undangan yang berlaku.
 
-Tanda tangan
-Pihak I: ______________________
-
-Pihak II: ______________________
-
-Saksi: ______________________
+Demikian perjanjian ini dibuat dalam rangkap 2 (dua) masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama.
 """
 
 TEMPLATE_PARTTIME = """PERJANJIAN KERJA PART-TIME (PARUH WAKTU)
@@ -164,10 +154,7 @@ Pemutusan dapat dilakukan dengan pemberitahuan tertulis {notice_days} hari kecua
 Pasal 6 — Kerahasiaan & Perilaku
 Pihak II harus menjaga kerahasiaan data pelanggan dan proses internal selama dan setelah bekerja selama waktu yang disepakati.
 
-Tanda tangan
-Pihak I: ______________________
-
-Pihak II: ______________________
+Demikian perjanjian ini dibuat dalam rangkap 2 (dua) masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama.
 """
 
 TEMPLATE_MAGANG = """PERJANJIAN MAGANG / KONTRAK MAGANG
@@ -200,10 +187,7 @@ Data dan informasi internal yang diakses peserta adalah rahasia. Publikasi hasil
 Pasal 7 — Pengakhiran Program
 Program dapat dihentikan lebih awal jika peserta melakukan pelanggaran, tidak memenuhi persyaratan, atau karena force majeure. Pengakhiran dicatat secara tertulis dengan alasan dan dokumentasi.
 
-Tanda tangan
-Pihak I: ______________________
-
-Pihak II: ______________________
+Demikian perjanjian ini dibuat dalam rangkap 2 (dua) masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama.
 """
 
 TEMPLATE_FREELANCE = """PERJANJIAN KERJA FREELANCE / KERJA LEPAS
@@ -242,10 +226,7 @@ Pasal 10 — Force Majeure & Penyelesaian Sengketa
 Keadaan kahar membebaskan pihak dari kewajiban sementara; jadwal dan biaya akan dinegosiasikan ulang bila perlu.
 Perselisihan diselesaikan melalui musyawarah, mediasi, atau arbitrase/pengadilan sesuai perjanjian.
 
-Tanda tangan
-Pemberi Tugas: ______________________
-
-Penyedia Jasa: ______________________
+Demikian perjanjian ini dibuat dalam rangkap 2 (dua) masing-masing bermaterai cukup dan mempunyai kekuatan hukum yang sama.
 """
 
 
@@ -320,7 +301,7 @@ def create_docx(text):
         else:
             doc.add_paragraph(block)
     doc.add_paragraph(
-        "\n\n\nTanda tangan:\n\nPihak I: ______________________\n\nPihak II: ______________________\n\nSaksi: ______________________"
+        "\n\nTanda tangan:\n\nPihak I: ______________________\t\t\t\t\tPihak II: ______________________"
     )
     bio = BytesIO()
     doc.save(bio)
@@ -589,3 +570,4 @@ with tab_freelance:
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             key="dl_fl_docx",
         )
+
